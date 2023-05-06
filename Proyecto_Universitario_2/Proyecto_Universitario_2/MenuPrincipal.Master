@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuPrincipal.master.cs" Inherits="Proyecto_Universitario_2.MenuPrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/menu_css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul >
+<li > <a class="active" href="inicio_2.aspx" > Inicio</a > </li >
+<li > <a href="Frm_Noticias.aspx" > Noticias</a > </li >
+<li > <a href="Frm_Contactos.aspx" > Contacto</a > </li >
+<li  style="float:right"> <a class="active" href="inicio.aspx" > Salir</a> </li >
+</ul >
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
